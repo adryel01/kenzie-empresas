@@ -1,0 +1,218 @@
+
+.header-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    border-bottom: 1px solid lightgray;
+    position: fixed;
+    background-color: var(--color-brand-2);
+    width: 100%;
+    z-index: 2;
+    padding: 8px;
+    padding-left: 50px;
+}
+
+.navigator{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+}
+
+.menu-dropdown{
+    display: flex;
+    height: 95px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    background-color: var(--color-brand-2);
+}
+
+.button-menu-dropdown{
+    height: 24px;
+    width: 24px;
+    border: none;
+    font-size: larger;
+}
+
+.button-home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    width: 40%;
+    border-radius: 4px;
+    color: var(--color-brand-1);
+    border: 1px var(--color-brand-1) solid;
+    background-color: var(--color-brand-2);
+}
+
+.button-home-desktop {
+    display: none;
+}
+
+.button-login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    width: 40%;
+    border-radius: 4px;
+    color: var(--color-brand-2);
+    border: 1px var(--color-brand-1) solid;
+    background-color: var(--color-brand-1);
+}
+
+.button-login-desktop {
+    display: none;
+}
+
+.container{
+    max-width: 100%;
+}
+
+.bg-mobile{
+    max-width: 100%;
+    object-fit:cover;
+}
+
+.bg-desktop{
+    display: none;
+}
+
+.section-cadastro{
+    background-color: var(--color-brand-2);
+    display: flex;
+    flex-direction: column;
+    padding: 24px 16px;
+    position: absolute;
+    top: 100px;
+    width: 100%;
+}
+
+.section-cadastro>h1{
+    padding-bottom: 24px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+input{
+    height: 52px;
+    padding-left: 8px;
+    border: 1px grey solid;
+}
+
+select{
+    height: 52px;
+    padding-left: 8px;
+    border: 1px grey solid;
+}
+
+.button-form-cadastro{
+    height: 52px;
+    padding-left: 8px;
+    border: 1px var(--color-brand-1) solid;
+    color: var(--color-brand-2);
+    background-color: var(--color-brand-1);
+    font-size: 16px;
+}
+
+.button-return{
+    height: 52px;
+    padding-left: 8px;
+    border: 1px var(--color-brand-1) solid;
+    color: var(--color-brand-1);
+    background-color: var(--color-brand-2);
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.show{
+    display: none;
+}
+
+@media (min-width:800px) {
+    body {
+        width: 100%;
+        max-width: 100vw;
+    }
+
+    .header-menu {
+        max-width: 100vw;
+    }
+
+    .navigator {
+        max-width: 100vw;
+        padding: 0 50px;
+    }
+
+    .bg-mobile {
+        display: none;
+    }
+
+    .bg-desktop {
+        display: flex;
+        max-height: 100vh;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .button-menu-dropdown {
+        display: none;
+    }
+
+    .button-home-desktop {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 48px;
+        width: 40%;
+        border-radius: 4px;
+        color: var(--color-brand-1);
+        border: 1px var(--color-brand-1) solid;
+        background-color: var(--color-brand-2);
+    }
+
+    .button-login-desktop {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 48px;
+        width: 40%;
+        border-radius: 4px;
+        color: var(--color-brand-2);
+        border: 1px var(--color-brand-1) solid;
+        background-color: var(--color-brand-1);
+    }
+
+    .buttons-menu {
+        display: flex;
+        width: 300px;
+        justify-content: space-evenly;
+    }
+
+    .section-cadastro {
+        background-color: var(--color-brand-2);
+        display: flex;
+        flex-direction: column;
+        padding: 24px 16px;
+        position: absolute;
+        top: 200px;
+        left: 50%;
+        margin-left: -15%;
+        width: 500px;
+        z-index: 0;
+    }
+
+}

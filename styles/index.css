@@ -1,0 +1,353 @@
+.header-menu {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid lightgray;
+    position: fixed;
+    background-color: var(--color-brand-2);
+    width: 100%;
+    z-index: 2;
+    padding: 8px;
+}
+
+.navigator {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+
+.menu-dropdown {
+    display: flex;
+    height: 95px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    background-color: var(--color-brand-2);
+}
+
+.button-menu-dropdown {
+    height: 24px;
+    width: 24px;
+    border: none;
+    font-size: larger;
+}
+
+.button-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    width: 40%;
+    border-radius: 4px;
+    color: var(--color-brand-1);
+    border: 1px var(--color-brand-1) solid;
+    background-color: var(--color-brand-2);
+}
+
+.button-cadastro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    width: 40%;
+    border-radius: 4px;
+    color: var(--color-brand-2);
+    border: 1px var(--color-brand-1) solid;
+    background-color: var(--color-brand-1);
+}
+
+.container {
+    padding-top: 70px;
+}
+
+.select-sector {
+    margin: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    color: var(--color-brand-2);
+    border-color: var(--color-brand-1);
+    background-color: var(--color-brand-1);
+    padding-left: 32px;
+    height: 52px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+.fa-arrow-down {
+    transform: rotate(-90deg);
+    transition: 0.5s;
+}
+
+.button-rotate {
+    transform: rotate(0deg);
+    transition: 0.5s;
+}
+
+.container-list {
+    overflow-x: scroll;
+    padding: 0px 16px;
+}
+
+.list-companies {
+    display: flex;
+    flex-direction: row;
+    height: 211px;
+    width: max-content;
+    overflow-x: scroll;
+}
+
+.list-companies-item {
+    width: 241px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0px 16px;
+    padding: 8px;
+    border-bottom: 1px var(--color-brand-1) solid;
+}
+
+.companie-name {
+    font-size: 28px;
+    font-weight: bold;
+    align-self: flex-start;
+}
+
+.companie-opening-hours {
+    font-size: 18px;
+    margin-top: 18px;
+}
+
+.companie-sector {
+    height: 32px;
+    width: 90px;
+    border-radius: 24px;
+    border: 1px var(--color-brand-1) solid;
+    color: var(--color-brand-1);
+    margin-bottom: 32px;
+}
+
+.filter-companies {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 4px;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    border: 1px var(--color-brand-1) solid;
+    border-radius: 4px;
+    padding: 0px 0px;
+    background-color: var(--color-brand-2);
+    position: fixed;
+    top: 150px;
+    left: 10%;
+    transition: 0.5s;
+    height: 60px;
+}
+
+.filter-companies>label {
+    width: 60%;
+}
+
+.filter-companies>input {
+    width: 30%;
+}
+
+.show {
+    display: none;
+}
+
+@media (min-width:800px) {
+
+    .header-menu {
+        display: flex;
+        flex-direction: column;
+        border-bottom: 1px solid lightgray;
+        position: fixed;
+        background-color: var(--color-brand-2);
+        width: 100%;
+        z-index: 2;
+        padding: 8px;
+    }
+
+    .navigator {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 60px;
+        padding: 0 50px;
+    }
+
+    .menu-dropdown {
+        display: flex;
+        height: 95px;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        background-color: var(--color-brand-2);
+    }
+
+    .button-menu-dropdown {
+        display: none;
+    }
+
+    .button-login-desktop {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 48px;
+        width: 40%;
+        border-radius: 4px;
+        color: var(--color-brand-1);
+        border: 1px var(--color-brand-1) solid;
+        background-color: var(--color-brand-2);
+    }
+
+    .button-cadastro-desktop {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 48px;
+        width: 40%;
+        border-radius: 4px;
+        color: var(--color-brand-2);
+        border: 1px var(--color-brand-1) solid;
+        background-color: var(--color-brand-1);
+    }
+
+    .buttons-menu {
+        display: flex;
+        width: 300px;
+        justify-content: space-evenly;
+    }
+
+    .container {
+        display: flex;
+        padding-top: 120px;
+        max-width: 1200px;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    aside>img {
+        height: 70vh;
+    }
+
+    .select-sector {
+        margin: 24px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        color: var(--color-brand-2);
+        border-color: var(--color-brand-1);
+        background-color: var(--color-brand-1);
+        padding-left: 32px;
+        height: 52px;
+        border-radius: 4px;
+    }
+
+
+    .fa-arrow-down {
+        transform: rotate(-90deg);
+        transition: 0.5s;
+    }
+
+    .button-rotate {
+        transform: rotate(0deg);
+        transition: 0.5s;
+    }
+
+    .container-list {
+        overflow-y: scroll;
+        padding: 0px 16px;
+    }
+
+    .select-list{
+        width: 100%;
+        height: 60px;
+        align-self: center;
+        justify-items: center;
+        border: none;
+        padding-left: 16px;
+        font-size: large;
+        background-color: transparent;
+    }
+
+    .list-companies {
+        display: flex;
+        flex-direction: column;
+        height: 60vh;
+        width: max-content;
+        overflow-y:visible;
+    }
+
+    .list-companies-item {
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 0px 16px;
+        padding: 8px;
+        border-bottom: 1px var(--color-brand-1) solid;
+    }
+
+    .companie-name {
+        font-size: 28px;
+        font-weight: bold;
+        align-self: flex-start;
+    }
+
+    .companie-opening-hours {
+        font-size: 18px;
+        margin-top: 18px;
+    }
+
+    .companie-sector {
+        height: 32px;
+        width: 90px;
+        border-radius: 24px;
+        border: 1px var(--color-brand-1) solid;
+        color: var(--color-brand-1);
+        margin-bottom: 32px;
+    }
+
+    .filter-companies {
+        display: flex;
+        max-width: 500px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 4px;
+        width: 80%;
+        justify-content: center;
+        align-items: center;
+        border: 1px var(--color-brand-1) solid;
+        border-radius: 4px;
+        padding: 0px 0px;
+        background-color: var(--color-brand-2);
+        position: fixed;
+        top: 200px;
+        left: 39.5%;
+        transition: 0.5s;
+    }
+
+    .filter-companies>label {
+        width: 60%;
+    }
+
+    .filter-companies>input {
+        width: 30%;
+    }
+
+    .show {
+        display: none;
+    }
+}

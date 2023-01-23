@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+body{
+    font-family: 'Inter';
+}
+
+:root{
+    --color-brand-1: #4200FF;
+    --color-brand-2: #FFFFFF;
+    --color-black: #000000;
+    --color-red: #CE4646;
+    --color-green: #4BA036;
+    --color-border-box-1: rgb(179, 179, 179);
+    --color-bg-modal: #4200FF50;
+}

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/reset.css">
+    <link rel="stylesheet" href="/styles/global.css">
+    <link rel="stylesheet" href="./dash_admin.css">
+    <script src="https://kit.fontawesome.com/8d6bb71c27.js" crossorigin="anonymous"></script>
+    <script type="module" src="./dash_admin.js" defer></script>
+    <title>Dashboard Admin</title>
+</head>
+
+<body>
+    <section class="bg-modal">
+        <div class="modal-create-department">
+            <p><button class="close-modal-create-department">X</button></p>
+            <h1>Criar Departamento</h1>
+            <form class="form-modal-create-department">
+                <input type="text" placeholder="Nome do departamento" id="input-department-name" required>
+                <input type="text" placeholder="Descrição" id="input-department-description" required>
+                <select name="list-create-department" id="list-create-department" title="list-select-company">
+                    <option value="" selected disabled>Selecionar Empresa</option>
+                </select>
+                <button class="submit-modal-create-department" type="submit">Criar departamento</button>
+            </form>
+        </div>
+
+        <div class="modal-show-hide">
+            <p><button class="close-modal-show-hide">X</button></p>
+            <h1 class="department-name-modal-show-hide"></h1>
+            <div class="header-modal-show-hide">
+                <div class="info-department-header-modal-show-hide">
+                    <h3 class="header-show-hide-department-description"></h3>
+                    <p class="header-show-hide-company-name"></p>
+                </div>
+                <div class="hire-header-modal-show-hide">
+                    <form class="form-modal-hire">
+                        <select name="list-users-to-hire" id="list-users-to-hire" title="list-select-users">
+                            <option value="" selected disabled>Selecionar usuário</option>
+                        </select>
+                        <button type="button" class="button-hire-employer">Contratar</button>
+                    </form>
+                </div>
+            </div>
+            <ul class="list-users-hired">
+                <!-- <li class="card-user-hired">
+                    <h3></h3>
+                    <p></p>
+                    <p></p>
+                    <div class="footer-card-user">
+                        <button class="button-edit-user" id=${element.uuid}><i class="fa-solid fa-pen"></i></button>
+                        <button class="button-delete-user" id=user_delete_${element.uuid}><i class="fa-solid fa-trash-can"></i></button>
+                    </div>
+                </li> -->
+            </ul>
+
+
+        </div>
+
+        <div class="modal-edit-department">
+            <p><button class="close-modal-edit-department">X</button></p>
+            <h1>Editar Departamento</h1>
+            <form class="form-modal-create-department">
+                <input type="text" placeholder="Editar informações do departamento" id="edit-department-description"
+                    required>
+                <button class="submit-modal-edit-department" type="submit">Salvar alterações</button>
+            </form>
+        </div>
+
+        <div class="modal-delete-department">
+            <p><button class="close-modal-delete-department">X</button></p>
+            <h1>Realmente deseja deletar o Departamento <span class="department-name"></span> e demitir seus
+                funcionários?</h1>
+            <button type="submit" class="submit-modal-delete-department">Confirmar</button>
+        </div>
+
+        <div class="modal-edit-user">
+            <p><button class="close-modal-edit-user">X</button></p>
+            <h1>Editar Usuário</h1>
+            <form class="form-modal-edit-user">
+                <select name="list-work-modalities" id="list-work-modalities" title="list-select-modality">
+                    <option value="" selected disabled>Selecionar modalidade de trabalho</option>
+                    <option value="home-office">Home Office</option>
+                    <option value="presencial">Presencial</option>
+                </select>
+                <select name="list-professional-level" id="list-professional-level"
+                    title="list-select-professional-level">
+                    <option value="" selected disabled>Selecionar nível profissional</option>
+
+                    <option value="estagiário">Estagiário</option>
+                    <option value="júnior">Júnior</option>
+                    <option value="pleno">Pleno</option>
+                    <option value="sênior">Sênior</option>
+                </select>
+                <button class="submit-modal-edit-user" type="submit">Editar</button>
+            </form>
+        </div>
+
+        <div class="modal-delete-user">
+            <p><button class="close-modal-delete-user">X</button></p>
+            <h1>Realmente deseja remover o usuário<span class="user-name"></span>?</h1>
+            <button type="submit" class="submit-modal-delete-user">Deletar</button>
+        </div>
+
+
+    </section>
+    <header class="header-menu">
+        <nav class="navigator">
+            <img class="logo-kenzie" src="/assets/img/logo.png" alt="logo kenzie empresas">
+            <a href="/index.html" class="button-logout">Logout</a>
+        </nav>
+
+    </header>
+
+    <main class="container">
+        <section class="departments">
+            <div class="departments-header">
+                <h1>Departamentos</h1>
+                <div class="departments-subheader">
+                    <form class="select-company">
+                        <select name="list-select-company" id="list-select-company" title="list-select-company">
+                            <option class="null-select-company" value="all" selected disabled>Selecionar Empresa
+                            </option>
+                        </select>
+                    </form>
+                    <button class="button-create-department"><i class="fa-solid fa-plus"></i> Criar</button>
+                </div>
+                
+            </div>
+            <ul class="list-departments">
+
+            </ul>
+        </section>
+        <section class="users">
+            <h1>Usuários cadastrados</h1>
+            <ul class="list-users">
+
+            </ul>
+        </section>
+    </main>
+</body>
+
+</html>

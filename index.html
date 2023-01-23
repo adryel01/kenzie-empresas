@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/index.css">
+    <script src="https://kit.fontawesome.com/8d6bb71c27.js" crossorigin="anonymous" defer></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js" defer></script>
+    <script type="module" src="./scripts/index.js" defer></script>
+    <title>Home</title>
+</head>
+
+<body>
+    <header class="header-menu">
+        <nav class="navigator">
+            <img class="logo-kenzie" src="./assets/img/logo.png" alt="logo kenzie empresas">
+            <button class="button-menu-dropdown" type="button"><i class="fa-solid fa-bars"></i></button>
+            <div class="buttons-menu">
+                <a href="/pages/login/login.html" class="button-login">Login</a>
+                <a href="/pages/cadastro/cadastro.html" class="button-cadastro">Cadastro</a>
+            </div>
+        </nav>
+
+    </header>
+
+    <main class="container">
+        <aside>
+            <img src="/assets/img/bg-home-desktop.png" alt="">
+        </aside>
+        <div>
+            <div class="select-sector">
+                <h4>Selecionar Setor</h4>
+                <i class="fa-solid fa-arrow-down"></i>
+            </div>
+            <div class="container-list">
+                <ul class="list-companies"></ul>
+            </div>
+            <form class="filter-companies show">
+                <select title="select-list" class="select-list">
+                    <option value="" selected>Todos os setores</option>
+                </select>
+                
+            </form>
+        </div>
+
+
+    </main>
+</body>
+
+</html>

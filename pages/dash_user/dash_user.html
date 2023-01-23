@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/reset.css">
+    <link rel="stylesheet" href="/styles/global.css">
+    <link rel="stylesheet" href="./dash_user.css">
+    <script src="https://kit.fontawesome.com/8d6bb71c27.js" crossorigin="anonymous"></script>
+    <script type="module" src="./dash_user.js" defer></script>
+    <title>Dashboard User</title>
+</head>
+<body>
+    <section class="bg-modal">
+        <div class="modal-edit-profile">
+            <p><button class="close-modal">X</button></p>
+            <h1>Editar Perfil</h1>
+            <form class="form-modal">
+                <input type="text" placeholder="Seu nome" id="edit-name" required>
+                <input type="email" placeholder="Seu e-mail" id="edit-email" required>
+                <input type="password" placeholder="Sua senha" id="edit-password" required>
+                <button class="submit-modal" type="submit">Editar perfil</button>
+            </form>
+        </div>
+    </section>
+    <header class="header-menu">
+        <nav class="navigator">
+            <img class="logo-kenzie" src="/assets/img/logo.png" alt="logo kenzie empresas">
+            <a href="/index.html" class="button-logout">Logout</a>
+        </nav>
+        
+    </header>
+    
+     <main class="container">
+        <section class="section-info-user"></section>
+        <section class="current-company">
+            
+            <h1>Você ainda não foi contratado</h1>
+        
+        </section>
+     </main>
+</body>
+</html>
